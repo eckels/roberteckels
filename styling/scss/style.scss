@@ -1,0 +1,129 @@
+@import 'components/colors';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+
+.body-wrap {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    .body-wrap-inner {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 24px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 500px) {
+    .body-wrap {
+        .body-wrap-inner {
+            margin-left: 12px;
+            margin-right: 12px;
+            margin-top: 18px;
+        }
+    }
+}
+
+.nav-wrap {
+    margin: 0 0 12px 0;
+    nav {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 12px;
+        border-bottom: solid $style-borders 1px;
+        .left {
+            flex-grow: 1;
+            h1 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .right {
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    margin-left: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-wrap {
+        nav {
+            display: block;
+            .left {
+                margin-bottom: 8px;
+                h1 {
+                    text-align: center;
+                }
+            }
+            .right {
+                text-align: center;
+                ul {
+                    li {
+                        margin-left: 16px;
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+    }  
+}
+
+@media (max-width: 380px) {
+    .nav-wrap {
+        nav {
+            .left {
+                h1 {
+                    font-size: 1.35em;
+                }
+            }
+            .right {
+                ul {
+                    li {
+                        margin-left: 8px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }  
+}
+
+.footer-wrap {
+    border-top: solid $style-borders 1px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    footer {
+        margin: 0;
+        padding: 0;
+        p {
+            margin: 0;
+            padding: 0;
+            color: $dark-gray;
+        }
+    }
+}
+
+p {
+    font-size: 1.05em;
+    line-height: 160%;
+    color: $black;
+    margin: 12px 0;
+}
+
+ a {
+     color: $black;
+     transition: all 0.2s;
+     &:hover {
+         color: $link-color;
+     }
+ }

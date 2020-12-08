@@ -223,13 +223,13 @@
 @media (max-width: 550px) {
   .category-wrap .story-wrap .story {
     width: 180px;
-    margin: 12px;
+    margin: 16px 12px;
   }
 }
 @media (max-width: 432px) {
   .category-wrap .story-wrap .story {
     width: 154px;
-    margin: 12px 8px;
+    margin: 16px 8px;
   }
 }
 @media (max-width: 370px) {

@@ -35,6 +35,9 @@ body {
         border-bottom: solid $style-borders 1px;
         .left {
             flex-grow: 1;
+            a {
+                text-decoration: none;
+            }
             h1 {
                 margin: 0;
                 padding: 0;
@@ -103,10 +106,33 @@ body {
     footer {
         margin: 0;
         padding: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .left {
+            flex-grow: 1;
+        }
         p {
             margin: 0;
             padding: 0;
             color: $dark-gray;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-wrap {
+        footer {
+            display: block;
+            p {
+                margin: 0;
+                padding: 0;
+                color: $dark-gray;
+            }
+            .right {
+                margin-top: 4px;
+                font-size: 0.9em;
+            }
         }
     }
 }

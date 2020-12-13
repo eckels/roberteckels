@@ -226,6 +226,9 @@
         align-items: flex-start;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        a {
+            text-decoration: none;
+        }
         .story {
             width: 220px;
             margin: 18px 16px;
@@ -290,5 +293,59 @@
                 margin: 16px 12px;
             }
         }
+    }
+}
+
+.header-wrap {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    .text-header {
+        margin: 48px 0;
+        h2 {
+            margin: 0;
+            font-size: 1.5em;
+            margin-bottom: 2px;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .header-wrap {
+        .text-header {
+            margin: 36px 0;
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .header-wrap {
+        .text-header {
+            margin: 32px 0;
+            h2 {
+                font-size: 1.25em;
+            }
+        }
+    }
+}
+
+.content-wrapper {
+    .interview {
+        margin: 18px 0 36px 0;
+        .question {
+            margin: 28px 0 -10px 0;
+        }
+    }
+}
+
+.book-header-wrap {
+    .book-header {
+        
     }
 }

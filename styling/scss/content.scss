@@ -1,11 +1,49 @@
+@import 'components/colors';
+
 .content-wrapper {
     max-width: 850px;
     margin-left: auto;
     margin-right: auto;
+    border-top: solid $style-borders 1px;
     .content {
+        margin: 18px 0 36px 0;
         p {
-            margin: 16px 0;
+            margin: 24px 0;
             font-size: 1.1em;
         }
+        h5 {
+            font-size: 1.25em;
+            margin: 36px 0;
+            text-align: center;
+        }
+        .center {
+            text-align: center;
+        }
+        .img-wrap {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 3px;
+            }
+        }
+        .img-wrap-wide {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 3px;
+            }
+        }
     }
+}
+
+body {
+    background-image: url(../../img/background-light.jpg);
 }

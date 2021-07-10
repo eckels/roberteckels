@@ -62,6 +62,106 @@
   margin-bottom: 18px;
 }
 
+.book-wrap .book {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.book-wrap .book .book-left {
+  margin-right: 24px;
+}
+.book-wrap .book .book-left img {
+  width: 280px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.35);
+}
+.book-wrap .book .book-right .book-desc {
+  margin: 0;
+}
+.book-wrap .book .book-right .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 12px;
+}
+.book-wrap .book .book-right .buttons a {
+  text-decoration: none;
+}
+.book-wrap .book .book-right .buttons button {
+  margin-right: 8px;
+  background-color: #eeeeee;
+  cursor: pointer;
+  font-size: 0.85em;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #797979;
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+.book-wrap .book .book-right .buttons button img {
+  height: 20px;
+  width: auto;
+  opacity: 0.6;
+  margin-right: 7px;
+  transition: all 0.2s;
+}
+.book-wrap .book .book-right .buttons button:hover {
+  background-color: #e6e6e6;
+  color: #000000;
+}
+.book-wrap .book .book-right .buttons button:hover img {
+  opacity: 0.75;
+}
+
+@media (max-width: 800px) {
+  .book-wrap .book {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .book-wrap .book .book-left {
+    margin-right: 18px;
+  }
+  .book-wrap .book .book-left img {
+    width: 200px;
+  }
+  .book-wrap .book .book-right .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .book-wrap .book {
+    display: block;
+  }
+  .book-wrap .book .book-left {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  .book-wrap .book .book-left img {
+    width: 230px;
+  }
+  .book-wrap .book .book-right .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 12px;
+  }
+  .book-wrap .book .book-right .buttons button {
+    margin-bottom: 12px;
+  }
+}
 .gallery-nav {
   margin: 18px 0 36px 0;
 }

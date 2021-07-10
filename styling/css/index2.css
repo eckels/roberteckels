@@ -118,7 +118,7 @@
   color: #000000;
 }
 .book-wrap .book .book-right .buttons button:hover img {
-  opacity: 0.75;
+  opacity: 0.8;
 }
 
 @media (max-width: 800px) {

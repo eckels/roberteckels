@@ -95,6 +95,14 @@ body {
     margin-left: 6px;
     margin-right: 6px;
   }
+
+  .sub-nav-wrap .sub-nav {
+    text-align: center;
+  }
+  .sub-nav-wrap .sub-nav li {
+    margin-left: 9px;
+    margin-right: 9px;
+  }
 }
 .footer-wrap {
   border-top: solid #e1e1e1 1px;

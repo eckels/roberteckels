@@ -118,7 +118,17 @@ body {
                 }
             }
         }
-    }  
+    }
+
+    .sub-nav-wrap {
+        .sub-nav {
+            text-align: center;
+            li {
+                margin-left: 9px;
+                margin-right: 9px;
+            }
+        }
+    }
 }
 
 .footer-wrap {
